@@ -1,7 +1,7 @@
 import { db } from "~/server/db";
 
 async function setup() {
-  console.log("Setting up Campus Compass...");
+  console.log("Setting up No More FOMO...");
 
   // Create UCLA as the pilot university
   const ucla = await db.university.upsert({

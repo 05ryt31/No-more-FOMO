@@ -122,7 +122,7 @@ function Settings() {
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
           <div className="p-6 sm:p-8">
             <h1 className="text-3xl font-bold text-gray-900 mb-2">Settings</h1>
-            <p className="text-gray-600 mb-8">Customize your Campus Compass experience</p>
+            <p className="text-gray-600 mb-8">Customize your No More FOMO experience</p>
 
             {/* Tab Navigation */}
             <div className="border-b border-gray-200 mb-8">
