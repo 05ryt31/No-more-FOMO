@@ -34,7 +34,7 @@ export function AuthPrompt() {
           </div>
           <div className="flex-1">
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Get the most out of Campus Compass
+              Get the most out of No More FOMO
             </h3>
             <div className="space-y-1 mb-4">
               <div className="flex items-center gap-2 text-sm text-gray-600">

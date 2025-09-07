@@ -41,7 +41,7 @@ export function AuthModal({ isOpen, onClose, initialTab = 'login' }: AuthModalPr
   const signupMutation = useMutation(trpc.signup.mutationOptions({
     onSuccess: (data) => {
       setAuthData(data);
-      toast.success('Account created successfully! Welcome to Campus Compass.');
+      toast.success('Account created successfully! Welcome to No More FOMO.');
       onClose();
     },
     onError: (error) => {
@@ -93,7 +93,7 @@ export function AuthModal({ isOpen, onClose, initialTab = 'login' }: AuthModalPr
         <div className="p-6">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-gray-900">
-              {activeTab === 'login' ? 'Welcome back' : 'Join Campus Compass'}
+              {activeTab === 'login' ? 'Welcome back' : 'Join No More FOMO'}
             </h2>
             <button
               onClick={onClose}
@@ -209,11 +209,11 @@ export function AuthModal({ isOpen, onClose, initialTab = 'login' }: AuthModalPr
                     className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none"
                   >
                     <option value="">Select your university</option>
-                    {universitiesQuery.data?.map((university) => (
+                    {universitiesQuery.data && Array.isArray(universitiesQuery.data) ? universitiesQuery.data.map((university: any) => (
                       <option key={university.id} value={university.id}>
                         {university.name}
                       </option>
-                    ))}
+                    )) : null}
                   </select>
                 </div>
                 {signupForm.formState.errors.universityId && (

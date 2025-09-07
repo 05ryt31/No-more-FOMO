@@ -162,7 +162,7 @@ function Home() {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <div className="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading Campus Compass...</p>
+          <p className="text-gray-600">Loading No More FOMO...</p>
         </div>
       </div>
     );
@@ -175,7 +175,7 @@ function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-4">
             <div className="flex items-center gap-4">
-              <h1 className="text-2xl font-bold text-gray-900">Campus Compass</h1>
+              <h1 className="text-2xl font-bold text-gray-900">No More FOMO</h1>
               <div className="flex items-center gap-2 text-sm text-gray-600">
                 <MapPin className="w-4 h-4" />
                 <span>{selectedUniversityQuery.data?.name || defaultUniversityQuery.data?.name || 'UCLA'}</span>
